@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Manny to Adaeze</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To Adaeze ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<audio id="bg-music" src="audio.mp3" autoplay loop></audio>
 
-<div class="container">
-    <h1>To Adaeze ❤️</h1>
+<audio id="bgm" src="audio.mp3" autoplay muted playsinline></audio>
 
-    <div class="gallery">
-        <img src="pic1.jpg">
-        <img src="pic2.jpg">
-        <img src="pic3.jpg">
-        <img src="pic4.jpg">
-    </div>
+<h1>To Adaeze ❤️</h1>
+
+<div class="images">
+    <img src="img1.jpeg" alt="Image 1">
+    <img src="img2.jpeg" alt="Image 2">
 </div>
+
+<script>
+// Force audio to play on mobile by unmuting after user interaction
+document.addEventListener('click', () => {
+    const a = document.getElementById('bgm');
+    a.muted = false;
+    a.play();
+});
+</script>
 
 </body>
 </html>
