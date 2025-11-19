@@ -1,0 +1,12 @@
+
+body {
+    background: #d7c6ff;
+    text-align: center;
+    font-family: Arial;
+}
+
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
